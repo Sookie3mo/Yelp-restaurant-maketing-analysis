@@ -1,0 +1,322 @@
+@import '../../node_modules/antd/dist/antd.css';
+
+button {
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  border-radius: 0;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  box-shadow: 0px 10px 16px -9px rgba(0, 0, 0, 0.5);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.0vmax;
+  transition: all 0.3s ease;
+  /*font-family: 'Crimson Text', serif;*/
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-family: 'Titillium Web', sans-serif;*/
+  /*font-family: 'Cormorant Garamond', serif;*/
+}
+
+.container {
+  height: inherit;
+  background-color: #CD4F39;
+}
+
+.homepage {
+  display: flex;
+  align-items: center;
+  background: url('/image/homepage.jpg');
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.homeContent {
+  padding: 3vw;
+  background: rgba(0, 0, 0, 0.4);
+  padding-left: 15%;
+  width: 100%;
+}
+
+.homeTitle {
+  font-size: 8vh;
+  color: white;
+  padding-left: 20px;
+}
+
+.homeButton {
+  margin-left: 25px;
+  padding: 15px 20px;
+  display: block;
+  height: initial
+}
+
+/*svg {
+  margin-bottom: 50px;
+}
+*/
+/*.ant-collapse-content {
+  height: 1200px;
+  width: 1200px;
+}*/
+
+
+/* analysis page styling */
+/* styles for left navigation bar */
+.leftNav, .rightView {
+  display: inline-block;
+  /*background: url('/image/homepage.jpg');
+  background-size: cover;*/
+}
+
+/* styles for selecting area map view */
+.fullScreenMask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+.fullScreenMask.loadingMask {
+  z-index: 9999;
+}
+
+.selectAreaMapWrapper {
+  padding: 20px;
+}
+
+.selectAreaMapWrapper > button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.fullScreenMask button.closeBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.fullScreenMask button.closeBtn > i {
+  font-size: 40px;
+}
+
+
+/*=====11.21 TX====*/
+
+svg {
+  overflow: visible !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  border-color: #CD4F39 !important;
+  color: #CD4F39 !important;
+  -webkit-box-shadow: #CD4F39 !important;
+  box-shadow: #CD4F39 !important;
+}
+
+.ant-radio-button-wrapper-checked::before {
+  background-color: #CD4F39 !important;
+  opacity: 1.0 !important;
+}
+
+.ant-radio-button-wrapper:hover {
+  color: #CD4F39 !important;
+}
+
+.ant-select-open {
+  color: #CD4F39;
+}
+
+.ant-select-open .ant-select-selection {
+  border-color: #CD4F39;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(205, 79, 57, 0.2);
+}
+
+.ant-select-selection:hover{
+  border-color: #CD4F39 !important;
+}
+
+.ant-select-dropdown-menu-item-active {
+  background-color: rgba(205, 79, 57, 0.2) !important;
+}
+
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover:after {
+  color: rgba(205, 79, 57, 0.2) !important;
+}
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:after,
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover:after {
+  color: #CD4F39 !important;
+}
+
+.ant-select-selection__placeholder, .ant-select-search__field__placeholder {
+  height: 30px !important;
+  font-size: 1.0vmax;
+  }
+
+.ant-btn:hover, .ant-btn:focus {
+  color: #CD4F39;
+  border-color: #CD4F39;
+}
+
+:root .ant-collapse > .ant-collapse-item > .ant-collapse-header[aria-expanded="true"] .arrow {
+    font-size: 20px;
+}
+:root .ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+    font-size: 20px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    padding: 8px 0 8px 52px;
+}
+
+.blackText {
+  color: black;
+}
+
+.smallText {
+  font-size: 0.9vmax;
+}
+
+.marginTop {
+  margin-top: 10px;
+}
+
+.marginBottom {
+  margin-bottom: 10px;
+}
+
+
+
+/*show data map styling*/
+.showDataMap {
+  display: inline-block;
+  height: 90vw;
+  width: 70%;
+  border: 1px solid rgb(224, 224, 224);
+  max-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.infoWrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 0px 0px 20px;
+  width: calc(30% - 20px);
+}
+
+.infoContainer, .totalInfoContainer {
+  border: 1px solid rgb(224, 224, 224);
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  min-height: 150px;
+  white-space: pre-line;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+/* svg */
+#scatterplot, #hierarchicalbarchart {
+  overflow: visible;
+}
+
+/* instruction */
+.instructionWrapper {
+  font-size: 16px;
+}
+
+.instruction > button {
+  display: inline-block;
+}
+
+
+/* sunburst */
+.sunburstWrapper path {
+  stroke: #fff;
+}
+.sunburstWrapper #sequence {
+  width: 600px;
+  height: 70px;
+}
+.sunburstWrapper #legend {
+  padding: 10px 0 0 3px;
+}
+.sunburstWrapper #sequence text, #legend text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .instructionWrapper.needSelect {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .showDataMap {
+    width: 100%;
+  }
+  .infoWrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #scatterplot, #hierarchicalbarchart {
+    overflow: scroll;
+  }
+
+  .homeContent {
+    margin-top: 8%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .homeTitle {
+    font-size: 8vh;
+    color: white;
+    font-size: 48px;
+  }
+
+  .homeButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 10vw;
+    min-width: 180px;
+    text-align: center;
+  }
+
+  .instructionWrapper {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .instruction > button {
+    display: none;
+  }
+  .selectAreaMapWrapper {
+    margin-top: 40px;
+  }
+}
