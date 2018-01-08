@@ -15,7 +15,9 @@ The final system receives location and area information as input chosen by users
 ### Website:
   * http://18.217.55.107:3000/
 ### Paper:
-  * https://github.com/Sookie3mo/Yelp-restaurant-maketing-analysis/presentation_final/inf554-project-report.pdf  (PDF version in this repo)
+  * https://github.com/Sookie3mo/Yelp-restaurant-maketing-analysis/presentation_final/inf554-project-report.pdf
+  
+  (PDF version in this repo)
   * https://www.overleaf.com/read/zrkkmfffrjgt (Read Only)
 
 ### Video:
