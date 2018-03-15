@@ -13,7 +13,7 @@ The final system receives location and area information as input chosen by users
 * Dongyu Li
 
 ### Website:
-  * http://18.217.55.107:3000/
+* http://52.14.29.15:3000/
 ### Paper:
   * https://github.com/Sookie3mo/Yelp-restaurant-maketing-analysis/presentation_final/inf554-project-report.pdf
   
